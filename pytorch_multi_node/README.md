@@ -6,7 +6,7 @@
 
 搭建集群，加入gpu服务器后，设置Master节点。
 
-![image-20230725225139130](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20230725225139130.png)
+![image-20230725225139130](.\result_pic\image-20230725225139130.png)
 
 添加机器成功后，系统会给每个节点分配集群 IP，当状态为已连接时，代表机器间可相互通信。这里我们还需要设置一个 master 节点，设置后会自动进行以下操作：
 
@@ -15,9 +15,9 @@
 
 两台机器都可以ping通。
 
-![image-20230725225010276](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20230725225010276.png)
+![image-20230725225010276](.\result_pic\image-20230725225010276.png)
 
-![image-20230725225103993](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20230725225103993.png)
+![image-20230725225103993](.\result_pic\image-20230725225103993.png)
 
 ## 运行脚本
 
@@ -35,6 +35,6 @@ python -m torch.distributed.launch --nproc_per_node=2 --nnodes=2 --node_rank=1 -
 
 运行结果
 
-![image-20230725224712232](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20230725224712232.png)
+![image-20230725224712232](.\result_pic\image-20230725224712232.png)
 
-![image-20230725225307244](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20230725225307244.png)
+![image-20230725225307244](.\result_pic\image-20230725225307244.png)
