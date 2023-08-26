@@ -35,6 +35,8 @@ if __name__ == "__main__":
     print("static graph start")
     print(net.graph)
     print("static graph end")
+    # pip install tabulate
+    net.graph.print_tabular() # print the graph node info 
     net.recompile()
     net = net.to(device)
     # DistributedDataParallel
